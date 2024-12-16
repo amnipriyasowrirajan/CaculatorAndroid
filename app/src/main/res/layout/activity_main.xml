@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- TextView for Title -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,6 +18,7 @@
         android:padding="15dp"
         android:gravity="center" />
 
+    <!-- EditText for Number Input -->
     <EditText
         android:id="@+id/edit"
         android:layout_width="wrap_content"
@@ -25,206 +27,224 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp" />
 
+    <!-- LinearLayout to Hold Calculator Buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="250dp">
+        android:layout_marginBottom="50dp"
+        android:padding="10dp">
 
-        <!-- First Row -->
+        <!-- First Row of Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="4">
 
             <Button
                 android:id="@+id/bc"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="Clear"
-                android:layout_marginStart="10dp"
                 android:backgroundTint="@color/Red" />
 
             <Button
                 android:id="@+id/bopen"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="("
                 android:backgroundTint="@color/Green" />
 
             <Button
                 android:id="@+id/bclose"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text=")"
                 android:backgroundTint="@color/Green" />
 
             <Button
                 android:id="@+id/bdiv"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="/"
                 android:backgroundTint="@color/Orange" />
         </LinearLayout>
 
-        <!-- Second Row -->
+        <!-- Second Row of Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="4">
 
             <Button
                 android:id="@+id/b7"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="7"
                 android:backgroundTint="@color/Pink" />
 
             <Button
                 android:id="@+id/b8"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="8"
                 android:backgroundTint="@color/Pink" />
 
             <Button
                 android:id="@+id/b9"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="9"
                 android:backgroundTint="@color/Pink" />
 
             <Button
                 android:id="@+id/bmultiple"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="*"
                 android:backgroundTint="@color/Orange" />
         </LinearLayout>
 
-        <!-- Third Row -->
+        <!-- Third Row of Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="4">
 
             <Button
                 android:id="@+id/b4"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="4"
                 android:backgroundTint="@color/Pink" />
 
             <Button
                 android:id="@+id/b5"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="5"
                 android:backgroundTint="@color/Pink" />
 
             <Button
                 android:id="@+id/b6"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="6"
                 android:backgroundTint="@color/Pink" />
 
             <Button
                 android:id="@+id/bplus"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="+"
                 android:backgroundTint="@color/Orange" />
         </LinearLayout>
 
-        <!-- Fourth Row -->
+        <!-- Fourth Row of Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="4">
 
             <Button
                 android:id="@+id/b1"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="1"
                 android:backgroundTint="@color/Pink" />
 
             <Button
                 android:id="@+id/b2"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="2"
                 android:backgroundTint="@color/Pink" />
 
             <Button
                 android:id="@+id/b3"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="3"
                 android:backgroundTint="@color/Pink" />
 
             <Button
                 android:id="@+id/bsub"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="-"
                 android:backgroundTint="@color/Orange" />
         </LinearLayout>
 
-        <!-- Fifth Row -->
+        <!-- Fifth Row of Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="4">
 
             <Button
                 android:id="@+id/bac"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="AC"
                 android:backgroundTint="@color/Red" />
 
             <Button
                 android:id="@+id/b0"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="0"
                 android:backgroundTint="@color/Pink" />
 
             <Button
                 android:id="@+id/bdot"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="."
                 android:backgroundTint="@color/Green" />
 
             <Button
                 android:id="@+id/bequal"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_weight="1"
                 android:text="="
                 android:backgroundTint="@color/Orange" />
         </LinearLayout>
+
+        <!-- History Button (Placed outside the calculator) -->
+        <Button
+            android:id="@+id/bhistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/advance_with_history"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/bequal" />
     </LinearLayout>
+
 </RelativeLayout>
